@@ -1,0 +1,23 @@
+/* Optional: You can add custom styles for the carousel if needed */
+
+/* Ensure that the carousel images take up 100% of the container */
+#carousel-top img {
+    width: 100%;
+    height: auto;
+  }
+  
+  /* Hide non-active slides */
+  #carousel-top > div {
+    display: none;
+  }
+  
+  /* Show active slide */
+  #carousel-top > div.active {
+    display: block;
+  }
+  
+  /* Add transition effect for sliding images */
+  #carousel-top {
+    transition: transform 0.3s ease-in-out;
+  }
+  

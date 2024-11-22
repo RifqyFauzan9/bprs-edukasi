@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="src/output.css" rel="stylesheet" />
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+    rel="stylesheet" />
+    <title>BPRS - EDUKASI</title>
+    <link rel="shortcut icon" href="src/img/LOGO BPRS MAM.png" type="image/x-icon">
+</head>
+
+<body>
+  <header class="p-5 md:px-10 flex flex-col md:flex-row gap-5 md:gap-10 justify-between items-center md:items-center">
+    <div class="flex items-center justify-between w-full md:w-auto">
+      <a href="">
+        <img src="src/img/LOGO BPRS MAM.png" width="100" alt="logo-img" class="mx-auto md:mx-0" /></a>
+      <button class="md:hidden text-2xl" id="menu-toggle">
+        <i class="bx bx-menu"></i>
+      </button>
+    </div>
+
+    <nav
+      class="flex flex-col md:flex-row gap-5 md:gap-10 font-ubuntu text-[15px] md:text-[17px] hidden md:flex items-center"
+      id="menu">
+      <a href="#" class="hover:text-lime-800 animation duration-150 border-b-2 border-transparent hover:border-amber-500">Beranda</a>
+      <a href="#" class="hover:text-lime-800 animation duration-150 border-b-2 border-transparent hover:border-amber-500">Tentang Kami</a>
+      <a href="#" class="hover:text-lime-800 animation duration-150 border-b-2 border-transparent hover:border-amber-500">Media Informasi</a>
+      <a href="#" class="hover:text-lime-800 animation duration-150 border-b-2 border-transparent hover:border-amber-500">Produk & Layanan</a>
+      <a href="#" class="hover:text-lime-800 animation duration-150 border-b-2 border-transparent hover:border-amber-500">Kritik & Saran</a>
+    </nav>
+
+    <a href="">
+      <div class="flex flex-row gap-3 items-center">
+        <i class="bx bx-support text-lime-700 hover:text-white hover:bg-lime-500 animation duration-150 text-2xl bg-yellow-500 p-3 rounded-full"></i>
+        <div class="mt-5 md:mt-0">
+          <h3 class="text-lime-800 text-[18px] font-medium font-ubuntu">
+            Hubungi Kami
+          </h3>
+          <p class="text-lime-800 font-medium">
+            <i class="bx bxl-whatsapp text-xl"></i> 0811-2649-237
+          </p>
+        </div>
+      </div>
+    </a>
+  </header>
+
+  <main class="px-5 md:px-[20px]">
+    <section id="carousel-section">
+      <div class="relative mb-5">
+        <div class="overflow-hidden">
+          <div class="flex transition-transform duration-500 ease-in-out" id="carousel-top">
+            <div class="flex-shrink-0 w-full">
+              <img src="src/img/thumbnail-1.png" alt="Slide 1" class="w-full h-[200px] md:h-auto" />
+            </div>
+            <div class="flex-shrink-0 w-full">
+              <img src="src/img/thumbnail-2.png" alt="Slide 2" class="w-full h-[200px] md:h-auto" />
+            </div>
+            <div class="flex-shrink-0 w-full">
+              <img src="src/img/thumbnail-3.png" alt="Slide 3" class="w-full h-[200px] md:h-auto" />
+            </div>
+            <div class="flex-shrink-0 w-full">
+              <img src="src/img/thumbnail-4.png" alt="Slide 4" class="w-full h-[200px] md:h-auto" />
+            </div>
+            <div class="flex-shrink-0 w-full">
+              <img src="src/img/thumbnail-5.png" alt="Slide 5" class="w-full h-[200px] md:h-auto" />
+            </div>
+          </div>
+        </div>
+
+        <button id="prev-top" class="absolute top-1/2 left-4 transform -translate-y-1/2 p-4 text-white">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10" fill="none" viewBox="0 0 24 24"
+            stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+          </svg>
+        </button>
+        <button id="next-top" class="absolute top-1/2 right-4 transform -translate-y-1/2 p-4 text-white">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10" fill="none" viewBox="0 0 24 24"
+            stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+          </svg>
+        </button>
+      </div>
+    </section>
+
+    <section id="services" class="flex flex-col md:flex-row justify-center items-center gap-3 mb-5">
+      <div class="services-card flex-1">
+        <div class="title-card p-5 bg-lime-500">
+          <h1 class="text-center text-2xl font-bold font-ubuntu">
+            <i class="bx bxs-bell-ring mr-3"></i> Sorotan Utama
+          </h1>
+        </div>
+        <div class="card-body p-3 bg-slate-300 flex flex-col gap-4">
+          <div class="flex flex-row gap-5 items-center">
+            <i class="bx bxs-volume-full rounded-full text-xl bg-black text-white p-3"></i>
+            <p class="text-justify">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Perferendis, aspernatur!
+            </p>
+          </div>
+
+          <div class="flex flex-row gap-5 items-center">
+            <i class="bx bxs-volume-full rounded-full text-xl bg-black text-white p-3"></i>
+            <p class="text-justify">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Perferendis, aspernatur!
+            </p>
+          </div>
+
+          <div class="flex flex-row gap-5 items-center">
+            <i class="bx bxs-volume-full rounded-full text-xl bg-black text-white p-3"></i>
+            <p class="text-justify">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Perferendis, aspernatur!
+            </p>
+          </div>
+          <a href="#" class="bg-red-500 text-white p-3 text-center font-ubuntu">Selanjutnya >></a>
+        </div>
+      </div>
+
+      <div class="services-card flex-1">
+        <div class="title-card p-5 bg-teal-500">
+          <h1 class="text-center text-2xl font-bold font-ubuntu">
+            <i class="bx bx-credit-card mr-3 text-2xl"></i> Tips Keuangan
+          </h1>
+        </div>
+        <div class="card-body p-3 bg-slate-300 flex flex-col gap-4">
+          <div class="flex flex-row gap-5 items-center">
+            <i class="bx bxs-volume-full rounded-full text-xl bg-black text-white p-3"></i>
+            <p class="text-justify">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Perferendis, aspernatur!
+            </p>
+          </div>
+
+          <div class="flex flex-row gap-5 items-center">
+            <i class="bx bxs-volume-full rounded-full text-xl bg-black text-white p-3"></i>
+            <p class="text-justify">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Perferendis, aspernatur!
+            </p>
+          </div>
+
+          <div class="flex flex-row gap-5 items-center">
+            <i class="bx bxs-volume-full rounded-full text-xl bg-black text-white p-3"></i>
+            <p class="text-justify">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Perferendis, aspernatur!
+            </p>
+          </div>
+          <a href="#" class="bg-red-500 text-white p-3 text-center font-ubuntu">Selanjutnya >></a>
+        </div>
+      </div>
+
+      <div class="services-card flex-1">
+        <div class="title-card p-5 bg-blue-500">
+          <h1 class="text-center text-2xl font-bold font-ubuntu">
+            <i class="bx bx-news mr-3 text-2xl"></i> Kegiatan
+          </h1>
+        </div>
+        <div class="card-body p-3 bg-slate-300 flex flex-col gap-4">
+          <div class="flex flex-row gap-5 items-center">
+            <i class="bx bxs-volume-full rounded-full text-xl bg-black text-white p-3"></i>
+            <p class="text-justify">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Perferendis, aspernatur!
+            </p>
+          </div>
+
+          <div class="flex flex-row gap-5 items-center">
+            <i class="bx bxs-volume-full rounded-full text-xl bg-black text-white p-3"></i>
+            <p class="text-justify">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Perferendis, aspernatur!
+            </p>
+          </div>
+
+          <div class="flex flex-row gap-5 items-center">
+            <i class="bx bxs-volume-full rounded-full text-xl bg-black text-white p-3"></i>
+            <p class="text-justify">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Perferendis, aspernatur!
+            </p>
+          </div>
+          <a href="#" class="bg-red-500 text-white p-3 text-center font-ubuntu">Selanjutnya >></a>
+        </div>
+      </div>
+    </section>
+
+    <section id="video" class="flex flex-col md:flex-row gap-3 mb-5">
+      <!-- Video Section -->
+      <div class="bg-slate-300 p-5 flex-1">
+        <h1 class="text-3xl font-bold mb-5">
+          <i class="bx bxs-video-recording mr-3"></i> Video Terkini
+        </h1>
+        <iframe class="mb-5 w-full h-[320px]" src="https://www.youtube.com/embed/ru-16ANjPXAw2g5Y" title=""
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen>Your browser doesn't support iframe</iframe>
+        <a href="#" class="bg-red-500 text-white p-3 text-end font-ubuntu">Selanjutnya >></a>
+      </div>
+    
+      <!-- Kegiatan Section -->
+      <div class="bg-slate-300 p-5 flex-none">
+        <h1 class="text-3xl font-bold mb-5">
+          <i class="bx bx-bar-chart-alt-2 mr-3 text-3xl"></i> Kegiatan
+        </h1>
+
+        <div class="flex flex-col gap-3 mb-5 justify-center">
+          <div class="flex flex-col md:flex-row gap-3">
+            <img src="src/img/kgt-1.png" width="200" alt="">
+            <img src="src/img/kgt-2.jpg" width="200" alt="">
+          </div>
+
+          <div class="flex flex-col md:flex-row gap-3">
+            <img src="src/img/kgt-3.jpeg" width="200" alt="">
+            <img src="src/img/kgt-4.png" width="200" alt="">
+          </div>
+        </div>
+    
+        <a href="#" class="bg-red-500 text-white p-3 text-end font-ubuntu">Selanjutnya >></a>
+      </div>
+    
+    </section>
+    
+  </main>
+
+  <footer class="bg-slate-500 text-white py-8">
+    <div class="max-w-screen-xl mx-auto px-4">
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div class="text-center mb-4">
+          <img src="src/img/LOGO BPRS MAM.png" alt="PT BPRS Logo" class="mx-auto h-20" /><br>
+          <h3>BPRS MAM Berizin dan Diawasi oleh Otorias Jasa Keuangan</h3>
+        </div>
+        <div>
+          <h3 class="text-xl font-semibold mb-4">Tentang kami</h3>
+          <p class="text-sm">
+            Dengan komitmen untuk memberikan layanan terbaik dan memperkuat
+            ekonomi lokal, PT BPRS hadir sebagai mitra terpercaya bagi
+            individu dan pelaku usaha, melalui layanan perbankan yang sesuai
+            dengan prinsip-prinsip syariah.
+          </p>
+        </div>
+        <div>
+          <h3 class="text-xl font-semibold mb-4">Alamat</h3>
+          <h4>Kantor Pusat :</h4>
+          <p class="text-sm">
+            Jl. Siliwangi (Ringroad Barat) No.9, Modinan, Banyuraden, Gamping,
+            Sleman DIY 55293
+          </p>
+          <br>
+          <h4>Kantor Cabang Wonosari :</h4>
+          <p class="text-sm">
+            Jl. Wonosari - Yogyakarta Km 5, Bandung, Playen, Gunungkidul DIY 55861
+          </p>
+        </div>
+        <div>
+          <h3 class="text-xl font-semibold mb-4">Contact Us</h3>
+          <ul class="flex space-x-4">
+            <li>
+              <a href="https://x.com/bprsmam?mx=2"
+                class="text-gray-400 hover:text-white text-3xl transform transition-all duration-300 hover:translate-y-[p-3]">
+                <i class="bx bxl-twitter"></i>
+              </a>
+            </li>
+            <li>
+              <a href="https://www.instagram.com/bprsmam_official/"
+                class="text-gray-400 hover:text-white text-3xl transform transition-all duration-300 hover:translate-y-[-8px]">
+                <i class="bx bxl-instagram"></i>
+              </a>
+            </li>
+            <li>
+              <a href="https://www.facebook.com/bprsmamofficial/?locale=id_ID"
+                class="text-gray-400 hover:text-white text-3xl transform transition-all duration-300 hover:translate-y-[-8px]">
+                <i class="bx bxl-facebook-circle"></i>
+              </a>
+            </li>
+            <li>
+              <a href="https://www.youtube.com/@bprsmam7852"
+                class="text-gray-400 hover:text-white text-3xl transform transition-all duration-300 hover:translate-y-[-8px]">
+                <i class="bx bxl-youtube"></i>
+              </a>
+            </li>
+          </ul><br>
+          <h3>Nomor Telephone :</h3>
+          <h5 ><i class='bx bxs-phone-call mr-1'></i>0274-4539553 <br>
+            <i class='bx bxl-whatsapp' ></i> 08112649237</h5>
+        </div>
+      </div>
+      <div class="mt-8 border-t border-gray-600 pt-6 text-center text-sm">
+        <p>Copyright © 2024 by PT BPRS Mitra Amal Mulia</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+
+</html>
