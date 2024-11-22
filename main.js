@@ -31,3 +31,12 @@ setInterval(() => {
   currentIndexTop = (currentIndexTop + 1) % totalSlidesTop;
   updateCarousel(carouselTop, currentIndexTop, totalSlidesTop);
 }, 3000); // Slide otomatis setiap 3 detik
+
+// Menambahkan fungsi untuk toggle hamburger menu
+const menuToggleButton = document.getElementById('menu-toggle');
+const menu = document.getElementById('menu');
+
+menuToggleButton.addEventListener('click', () => {
+  // Toggle class 'hidden' pada menu
+  menu.classList.toggle('hidden');
+});
